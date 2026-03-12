@@ -40,3 +40,7 @@ plt.show()
 
 #prediction from raw data
 print(regressor.predict([[12]]))
+
+#Coefficent and intercept of regression
+print(regressor.coef_)
+print(regressor.intercept_)
