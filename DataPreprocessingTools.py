@@ -20,3 +20,9 @@ from sklearn.preprocessing import OneHotEncoder
 ct = ColumnTransformer(transformers = [('encoder', OneHotEncoder(), [0])], remainder = 'passthrough')
 x = np.array(ct.fit_transform(x))
 print(x)
+
+#Encoding the Dependent Variable
+from sklearn.preprocessing import LabelEncoder
+le = LabelEncoder()
+y = le.fit_transform(y)
+print(y)
