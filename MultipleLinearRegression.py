@@ -14,3 +14,8 @@ x = np.array(ct.fit_transform(x))
 #Splitting the dataset into the Training set and Test set
 from sklearn.model_selection import train_test_split
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size = 0.2, random_state = 0)
+
+#Training the Multiple Linear Regression model on the Training set
+from sklearn.linear_model import LinearRegression
+regressor = LinearRegression()
+regressor.fit(X_train, y_train)
